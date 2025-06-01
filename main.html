@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BrightStart Bakery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #ccc4bb;
+            color: #333;
+        }
+        header {
+            background: #ffb347;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            background: #ffe5b4;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .about, .products, .contact {
+            margin-bottom: 2rem;
+        }
+        .products-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+        }
+        .product {
+            background: #fff8e1;
+            border-radius: 8px;
+            padding: 1rem;
+            width: 220px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            border-radius: 6px;
+            margin-bottom: 0.5rem;
+        }
+        footer {
+            background: #ffb347;
+            text-align: center;
+            padding: 1rem;
+            font-size: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BrightStart Bakery</h1>
+        <p>Freshly baked treats, made with love in your neighborhood!</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <p>
+                BrightStart Bakery is a family-owned business dedicated to bringing you the freshest breads, pastries, and cakes. We use only the finest ingredients and bake everything from scratch every morning.
+            </p>
+        </section>
+        <section id="products" class="products">
+            <h2>Our Products</h2>
+            <div class="products-list">
+                <div class="product">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" alt="Sourdough Bread">
+                    <h3>Sourdough Bread</h3>
+                    <p>Classic, crusty, and tangy. Perfect for sandwiches or toast.</p>
+                </div>
+                <div class="product">
+                    <img src="https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80" alt="Chocolate Croissant">
+                    <h3>Chocolate Croissant</h3>
+                    <p>Flaky pastry with rich chocolate inside. A customer favorite!</p>
+                </div>
+                <div class="product">
+                    <img src="https://images.unsplash.com/photo-1505250469679-203ad9ced0cb?auto=format&fit=crop&w=400&q=80" alt="Carrot Cake">
+                    <h3>Carrot Cake</h3>
+                    <p>Moist, spiced cake topped with creamy frosting and walnuts.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <p>
+                📍 123 Main Street, Hometown<br>
+                📞 (555) 123-4567<br>
+                ✉️ <a href="mailto:info@brightstartbakery.com">info@brightstartbakery.com</a>
+            </p>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        &copy; 2024 BrightStart Bakery. All rights reserved.
+    </footer>
+</body>
+</html>
